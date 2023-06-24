@@ -1,0 +1,42 @@
+/* App.css */
+
+/* Styles généraux */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Header */
+header {
+  background-color: #d9d9d9;
+  padding: 20px;
+  height: 6rem;
+  border-bottom: 2px solid #222;
+}
+
+/* Barre de navigation */
+.sidebar {
+  background-color: #e9e9e9;
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #222;
+}
+
+/* Contenu principal */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-top: 1px solid #222;
+}
