@@ -1,5 +1,10 @@
 import './App.css';
 import Banner from './components/layout/Banner';
+import Home from './pages/Home';
+import ReactModal from 'react-modal';
+import { Routes, Route } from "react-router-dom";
+import Page2 from './pages/Page2';
+
 
 function App() {
   return (
@@ -7,20 +12,10 @@ function App() {
       <header>
         <Banner />
       </header>
-      <div className='layout-wrapper'>
-        <nav className='sidebar'>
-          <h2>Menu</h2>
-          <ul>
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-          </ul>
-          {/* Contenu de la barre de navigation */}
-        </nav>
-        <main className='content'>
-          {/* Contenu principal */}
-        </main>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/page-2" element={<Page2/>} />
+      </Routes>
       <footer>
         {/* Contenu du footer */}
       </footer>
@@ -29,3 +24,4 @@ function App() {
 }
 
 export default App;
+ReactModal.setAppElement('#root');

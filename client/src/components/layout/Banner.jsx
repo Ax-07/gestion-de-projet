@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-    return (
-        <div className="banner-wrapper">
-            <h1><strong>Logo</strong></h1>
-            <nav>
-                <ul className="flex-row">
-                    <li>Menu 1</li>
-                    <li>Menu 2</li>
-                    <li>Menu 3</li>
-                </ul>
-            </nav>
-        </div>
-    );
+  return (
+    <div className="banner-wrapper">
+      <Link to="/">
+        <h1>Logo</h1>
+      </Link>
+
+      <nav>
+        <ul className="flex-row">
+          <Link to="/">Home</Link>
+          <Link to="/page-2">Page 2</Link>
+        </ul>
+      </nav>
+    </div>
+  );
 };
 
 export default Banner;
